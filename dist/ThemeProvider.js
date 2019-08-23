@@ -7,7 +7,7 @@ exports["default"] = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _theme = _interopRequireDefault(require("./theme"));
+var _theme = require("./theme");
 
 var _styledComponents = require("styled-components");
 
@@ -21,7 +21,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 var ThemeProvider = function ThemeProvider(props) {
   var theme = _objectSpread({
-    base: _theme["default"]
+    base: _theme.theme
   }, props.theme);
 
   return _react["default"].createElement(ThemeProvider, {
@@ -30,7 +30,7 @@ var ThemeProvider = function ThemeProvider(props) {
 };
 
 ThemeProvider.defaultProps = {
-  theme: _theme["default"]
+  theme: _theme.theme
 };
 var _default = ThemeProvider;
 exports["default"] = _default;
