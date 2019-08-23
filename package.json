@@ -1,0 +1,28 @@
+{
+  "name": "styled-components-base",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel lib --out-dir dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-plugin-styled-components": "^1.10.6"
+  },
+  "peerDependencies": {
+    "react": "^16.9.0",
+    "styled-components": "^4.3.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "palx": "^1.0.3",
+    "styled-system": "^5.1.1"
+  }
+}
