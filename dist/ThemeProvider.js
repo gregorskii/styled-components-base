@@ -30,7 +30,7 @@ var ThemeProvider = function ThemeProvider(props) {
 };
 
 ThemeProvider.defaultProps = {
-  theme: theme
+  theme: _theme["default"]
 };
 var _default = ThemeProvider;
 exports["default"] = _default;
