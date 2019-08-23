@@ -14,11 +14,8 @@ var _styledComponents = require("styled-components");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 var ThemeProvider = function ThemeProvider(props) {
-  var theme = {
-    base: _theme.theme
-  };
   return _react["default"].createElement(ThemeProvider, {
-    theme: theme
+    theme: props.theme
   }, props.children);
 };
 
