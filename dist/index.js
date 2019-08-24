@@ -1,16 +1,40 @@
 "use strict";
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var _exportNames = {
+  Button: true,
+  ThemeProvider: true
+};
+Object.defineProperty(exports, "Button", {
+  enumerable: true,
+  get: function get() {
+    return _Button["default"];
+  }
+});
+Object.defineProperty(exports, "ThemeProvider", {
+  enumerable: true,
+  get: function get() {
+    return _ThemeProvider["default"];
+  }
+});
+
+var _Button = _interopRequireDefault(require("./components/Button"));
+
+var _ThemeProvider = _interopRequireDefault(require("./ThemeProvider"));
+
 var _theme = require("./theme");
 
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+Object.keys(_theme).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function get() {
+      return _theme[key];
+    }
+  });
+});
 
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var theme = {
-  theme: _objectSpread({}, _theme.base, {}, {
-    fg: 'chai'
-  })
-};
-console.log(theme);
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
