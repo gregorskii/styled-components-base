@@ -16,7 +16,6 @@ var Button = _styledComponents["default"].button.withConfig({
   displayName: "Button",
   componentId: "sc-1v1frjm-0"
 })(["color:", ";border:2px solid ", ";background:", ";font-size:1em;margin:1em;padding:0.25em 1em;border-radius:3px;"], function (props) {
-  console.log("blah", props);
   return props.theme.fg;
 }, function (props) {
   return props.theme.fg;
