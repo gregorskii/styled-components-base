@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.invertTheme = exports.base = void 0;
+exports.invert = exports.base = void 0;
 // Define our `fg` and `bg` on the theme
 var base = {
   fg: "palevioletred",
@@ -12,7 +12,7 @@ var base = {
 
 exports.base = base;
 
-var invertTheme = function invertTheme(_ref) {
+var invert = function invert(_ref) {
   var fg = _ref.fg,
       bg = _ref.bg;
   return {
@@ -21,4 +21,4 @@ var invertTheme = function invertTheme(_ref) {
   };
 };
 
-exports.invertTheme = invertTheme;
+exports.invert = invert;
