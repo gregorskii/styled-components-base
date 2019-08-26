@@ -11,6 +11,8 @@ var _theme = require("./theme");
 
 var _styledComponents = require("styled-components");
 
+var _global = _interopRequireDefault(require("./_global"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
@@ -24,11 +26,12 @@ var ThemeProvider = function ThemeProvider(props) {
 
   return _react["default"].createElement(_styledComponents.ThemeProvider, {
     theme: theme
-  }, props.children);
+  }, _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement(_global["default"], props.global), props.children));
 };
 
 ThemeProvider.defaultProps = {
-  theme: _theme.base
+  theme: _theme.base,
+  global: {}
 };
 var _default = ThemeProvider;
 exports["default"] = _default;
