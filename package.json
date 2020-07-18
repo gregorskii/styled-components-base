@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "esm": "^3.2.25",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "palx": "^1.0.3",
     "styled-system": "^5.1.1"
   }
